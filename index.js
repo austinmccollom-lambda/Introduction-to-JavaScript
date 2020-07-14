@@ -158,23 +158,25 @@ function rockPaperSissors(userChoice = prompt('Let\'s play rock, paper, sissors.
     }
 
 }
-rockPaperSissors();
-  
-  
+// rockPaperSissors();
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-
-
-
+const kmToMileFactor = 0.6214;
+function kmToMiles(kilometers) {
+    return kilometers * kmToMileFactor;
+}
+console.log(kmToMiles(5));
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
-  
 
-
-
+const feetToCmFactor = 30.48;
+function feetToCm(feet) {
+    return feet * feetToCmFactor;
+}
+console.log(feetToCm(1));
 
 /************************************************************** Task 6 **************************************************************/
 // 99 bottles of soda on the wall
