@@ -68,28 +68,29 @@ console.log(dogYears(myAge));
 // 4 - 7 months 5% of their body weight 
 // 7 - 12 months 4% of their body weight
 
-// when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
+// when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - 
+// if your calculations are correct your result should be 0.44999999999999996
   
 function dogFeeder(pounds, years){
     let poundsOfFood = 0;
     if (years < 1) {
-        if ( (2/12) < years < (4/12) ){
+        if ( (2/12) < years && years < (4/12) ){
             poundsOfFood = .1 * pounds;
             console.log(1);
-        } else if ( (4/12) < years < (7/12) ){
+        } else if ( (4/12) < years && years < (7/12) ){
             poundsOfFood = .05 * pounds;
             console.log(2);
-        } else if ( (7/12) < years < 1 ){
+        } else if ( (7/12) < years && years < 1 ){
             poundsOfFood = .04 * pounds;
             console.log(3);
         }
-    } else if ( 0 < pounds < 6 ) {
+    } else if ( 0 < pounds && pounds < 6 ) {
             poundsOfFood = .05 * pounds;
             console.log(4);
-    } else if ( 6 < pounds < 11 ) {
+    } else if ( 6 < pounds && pounds < 11 ) {
         poundsOfFood = .04 * pounds;
         console.log(5);
-    } else if ( 11 < pounds <= 15) {
+    } else if ( 11 < pounds && pounds <= 15) {
         poundsOfFood = .03 * pounds;
         console.log(6);
     } else {
@@ -100,13 +101,6 @@ function dogFeeder(pounds, years){
 }
 
 console.log(dogFeeder(15, 1));
-
-let pounds = 15;
-if ( 0 < pounds < 6 ) {
-    console.log(true);
-}
-
-
 
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
