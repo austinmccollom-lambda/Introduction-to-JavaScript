@@ -201,30 +201,46 @@ annoyingSong(5);
 //60s should be D 
 //and anything below 60 should be F
   
-// function gradeCalc(percent) {
-//     let letterGrade;
-//     if ( percent >= 90 ) {
-//         letterGrade = 'A';
-//     } else if ( percent >= 80 ) {
-//         letterGrade = 'B';
-//     } else if ( percent >= 70 ) {
-//         letterGrade = 'C';
-//     } else if ( percent >= 60 ) {
-//         letterGrade = 'D';
-//     } else if ( percent < 60 ) {
-//         letterGrade = 'F';
-//     }
-// }
+function gradeCalc(percent) {
+    let letterGrade;
+    if ( percent >= 90 ) {
+        letterGrade = 'A';
+    } else if ( percent >= 80 ) {
+        letterGrade = 'B';
+    } else if ( percent >= 70 ) {
+        letterGrade = 'C';
+    } else if ( percent >= 60 ) {
+        letterGrade = 'D';
+    } else if ( percent < 60 ) {
+        letterGrade = 'F';
+    }
+    return letterGrade
+}
 
-// gradeCalc()
-  
-  
+console.log(gradeCalc(98));
 
 /************************************************************** Stretch **************************************************************/
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
+function countVowels(str) {
+    let numberVowels = 0;
+    for ( i = 0; i < (str.length + 1); i++ ) {
+        // console.log(str[i]);
+        // let char = str[i];
+        if ( str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
+            numberVowels++;
+            console.log('vowel!');
+        }
+    }
+    return numberVowels;
+}
+console.log(countVowels('mother earth'));
+
+
+// let stringTest = 'mother earth';
+// console.log(stringTest[0]);
 
 
 
