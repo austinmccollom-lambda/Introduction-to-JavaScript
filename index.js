@@ -181,11 +181,16 @@ console.log(feetToCm(1));
 /************************************************************** Task 6 **************************************************************/
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
-// the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
+// the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda
+// on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
+function annoyingSong(startingNumber) {
+    for (i = startingNumber; i > 0; i--) {
+        console.log(i + ' bottles of soda on the wall, ' + i + ' bottles of soda, take one down pass it around ' + (i-1) + ' bottles of soda on the wall')
+    }
+}
 
-
-
+annoyingSong(5);
 
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
@@ -196,7 +201,22 @@ console.log(feetToCm(1));
 //60s should be D 
 //and anything below 60 should be F
   
+// function gradeCalc(percent) {
+//     let letterGrade;
+//     if ( percent >= 90 ) {
+//         letterGrade = 'A';
+//     } else if ( percent >= 80 ) {
+//         letterGrade = 'B';
+//     } else if ( percent >= 70 ) {
+//         letterGrade = 'C';
+//     } else if ( percent >= 60 ) {
+//         letterGrade = 'D';
+//     } else if ( percent < 60 ) {
+//         letterGrade = 'F';
+//     }
+// }
 
+// gradeCalc()
   
   
 
