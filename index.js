@@ -109,6 +109,56 @@ console.log(dogFeeder(15, 1));
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
+function generateComputerChoice(){
+    let randomNumber =  Math.floor(Math.random() * Math.floor(3));
+    console.log(randomNumber);
+    let computerChoice;
+    if ( randomNumber === 0 ) {
+        computerChoice = 'Rock';
+    } else if ( randomNumber === 1 ) {
+        computerChoice = 'Paper';
+    } else if ( randomNumber === 2 ) {
+        computerChoice = 'Sissors';
+    } else {
+        console.log('computer choice error!');
+    }
+    return computerChoice;
+}
+
+function rockPaperSissors(userChoice = prompt('Let\'s play rock, paper, sissors. What is your choice?')){
+    console.log('User plays ' + userChoice);
+    let computerChoice = generateComputerChoice();
+    console.log('Computer plays ' + computerChoice);
+    if ( userChoice.trim().toLowerCase() === 'rock') {
+        if ( computerChoice === 'Rock' ) {
+            console.log('TIE!');
+        } else if ( computerChoice === 'Paper' ) {
+            console.log('COMPUTER WINS!');
+        } else if ( computerChoice === 'Sissors' ) {
+            console.log('USER WINS!');
+        }
+    }
+    if ( userChoice.trim().toLowerCase() === 'paper') {
+        if ( computerChoice === 'Rock' ) {
+            console.log('USER WINS!');
+        } else if ( computerChoice === 'Paper' ) {
+            console.log('TIE!');
+        } else if ( computerChoice === 'Sissors' ) {
+            console.log('COMPUTER WINS!');
+        }
+    }
+    if ( userChoice.trim().toLowerCase() === 'sissors') {
+        if ( computerChoice === 'Rock' ) {
+            console.log('COMPUTER WINS!');
+        } else if ( computerChoice === 'Paper' ) {
+            console.log('USER WINS!');
+        } else if ( computerChoice === 'Sissors' ) {
+            console.log('TIE!');
+        }
+    }
+
+}
+rockPaperSissors();
   
   
 
