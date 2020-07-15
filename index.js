@@ -185,7 +185,7 @@ console.log(feetToCm(1));
 // on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
 function annoyingSong(startingNumber) {
-    for (i = startingNumber; i > 0; i--) {
+    for ( let i = startingNumber; i > 0; i-- ) {
         console.log(i + ' bottles of soda on the wall, ' + i + ' bottles of soda, take one down pass it around ' + (i-1) + ' bottles of soda on the wall')
     }
 }
@@ -226,29 +226,22 @@ console.log(gradeCalc(98));
 
 function countVowels(str) {
     let numberVowels = 0;
-    for ( i = 0; i < (str.length + 1); i++ ) {
+    for ( let i = 0; i < (str.length + 1); i++ ) {
         // console.log(str[i]);
         // let char = str[i];
         if ( str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
             numberVowels++;
-            console.log('vowel!');
         }
     }
     return numberVowels;
 }
 console.log(countVowels('mother earth'));
 
-
-// let stringTest = 'mother earth';
-// console.log(stringTest[0]);
-
-
-
-
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
 
+//Completed in the originally
 
 
 
